@@ -38,8 +38,38 @@ def reduce_function():
         print(*result)
 
 
+def collections_OrderedDict():
+
+    n = int(input("No of Items: "))
+    d1 = {}
+    for i in range(n):
+        s = input()               # "Banana Fries 12"
+        v = int(s.split()[-1])    # 12
+        k = s.rsplit(' ', 1)[0]   # 'Banana Fries'
+        d1[k] = v + d1.get(k, 0)
+
+    # print(d1)
+    for k,v in d1.items():
+        print(k,v)
+
+# collections_OrderedDict()
 
 
-leap_year()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# leap_year()
 # print_consecutive_numbers()
 # reduce_function()
